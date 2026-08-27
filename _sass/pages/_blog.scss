@@ -901,6 +901,24 @@ h5 a {
 			padding: 105px 15px;
 			position: relative;
 			z-index: 100;
+			.blog-header{
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 20px;
+				flex-wrap: wrap;
+				margin-bottom: 40px;
+				h2{
+					margin: 0;
+				}
+				.textbutton{
+					color: var(--main-text-secondary-color, #666);
+
+					&:hover{
+						color: var(--main-link-hover-color, #998B00);
+					}
+				}
+			}
 			h3{
 				margin-top: 0;
 				margin-bottom: 0;
@@ -1166,6 +1184,10 @@ footer{
 		.scheduled + .venue{
 			margin-left: 0;
 		}
+	}
+	.newswrap .postwrap .infoline:has(.scheduled){
+		flex-wrap: wrap;
+		row-gap: 2px;
 	}
 	.infoline .scheduled,
 	.publishedinfo{
