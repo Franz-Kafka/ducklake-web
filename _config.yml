@@ -63,7 +63,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /images/sharingducklake.png
+      image: /images/sharingducklake.jpg
       toc: true
 
 repository: "duckdb/ducklake-web"
